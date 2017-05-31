@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingLeft="3dp">
+
+    <LinearLayout
+        android:id="@+id/user_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/small_gift_bg"
+        android:orientation="horizontal">
+
+        <com.musicbean.widget.RoundImageView
+            android:id="@+id/head_img"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/icon_default_new_header"
+            app:edgesize="1dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="msg"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/gift_img"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/user_layout"
+        android:layout_alignRight="@+id/user_layout"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="7dp"
+        android:src="@drawable/live_logo" />
+
+    <TextView
+        android:id="@+id/gift_hit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-7dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/gift_img"
+        android:text="X1"
+        android:textColor="@color/text_green"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+</RelativeLayout>

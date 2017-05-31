@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.musicbean.ui.login.GuidanceActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/abc_btn_default_mtrl_shape"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/time"
+        android:text="跳过（3）"
+        android:textSize="13dp"
+        android:gravity="center"
+        android:background="@color/black_alpha10"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="300dp"
+        />
+</RelativeLayout>

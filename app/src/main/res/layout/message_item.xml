@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- android:layout_height="90dp" -->
+
+    <ImageView
+        android:id="@+id/iv_message"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/abc_btn_check_material" />
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+            <!-- android:layout_height="60dp" -->
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:text="用户名称"
+            android:textSize="11sp"
+            android:gravity="center|left"
+            android:paddingLeft="8dp"
+            android:layout_width="60dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/tv_comment"
+            android:text="唱的很好很好，不错不错不错不错1是"
+            android:paddingLeft="8dp"
+            android:textSize="13sp"
+            android:gravity="center|left"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+            <!-- android:layout_height="20dp" -->
+        <TextView
+            android:id="@+id/tv_time"
+            android:text="2017.05.16"
+            android:paddingLeft="8dp"
+            android:gravity="center|left"
+            android:textSize="10sp"
+            android:layout_width="60dp"
+            android:layout_height="20dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_video_name"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:ellipsize="end"
+            android:lines="3"
+            android:textSize="12sp"
+            android:text="渐渐恢复的回复就的话就是大家的解释的话就是国家级风景高房价防静电防静电发"
+            android:layout_width="75dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

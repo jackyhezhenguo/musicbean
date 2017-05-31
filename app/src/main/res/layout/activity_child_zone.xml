@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.musicbean.ui.PopularityList.ChildZoneActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/material_blue_grey_900"
+        android:layout_height="40dp"
+
+        >
+        <ImageView
+            android:id="@+id/iv_left"
+            android:src="@drawable/abc_btn_radio_to_on_mtrl_015"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:text="孩子空间"
+            android:textColor="@color/black_alpha80"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginLeft="90dp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#bbbbbb"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:id="@+id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="6dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="孩子1"
+            android:textColor="@color/text_gray"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:src="@drawable/yinfu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/icon_item_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_width="340dp"
+        android:layout_height="2px"
+        android:background="@color/line_gray" />
+    <LinearLayout
+        android:id="@+id/name2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="孩子1"
+            android:textColor="@color/text_gray"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:src="@drawable/yinfu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/icon_item_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_width="340dp"
+        android:layout_height="2px"
+        android:background="@color/line_gray" />
+
+
+
+    <LinearLayout
+        android:id="@+id/name3_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/name3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="孩子1"
+            android:textColor="@color/text_gray"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yinfu1"
+            android:textColor="@color/text_black"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/icon_item_more" />
+
+    </LinearLayout>
+</LinearLayout>
+
+    <TextView
+        android:layout_marginTop="363dp"
+        android:background="#999999"
+        android:gravity="center"
+        android:text="添加"
+        android:textSize="15sp"
+        android:textColor="#dddddd"
+        android:id="@+id/tv_increase"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+</LinearLayout>

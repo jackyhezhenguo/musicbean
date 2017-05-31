@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="265dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rrect_white_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:text="兑换"
+        android:textColor="@color/text_black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="音悦豆余额"
+        android:textColor="@color/text_black"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:layout_marginTop="23dp">
+
+        <EditText
+            android:id="@+id/edt_beans"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:background="@drawable/rrect_gray_2dp_bg"
+            android:gravity="center_vertical"
+            android:hint="音悦豆数量"
+            android:inputType="numberDecimal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txt_diamond"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rrect_gray_2dp_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="0钻石"
+            android:textColor="@color/text_gray"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:background="@drawable/round_green_solid_bg"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/text_black"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_green_solid_bg"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/text_black"
+            android:textSize="13sp" />
+    </RelativeLayout>
+</LinearLayout>

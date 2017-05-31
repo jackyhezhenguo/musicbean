@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/item_bg_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp">
+
+    <com.musicbean.widget.RoundImageView
+        android:id="@+id/head_image"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/icon_default_new_header"
+        app:edgesize="1dp" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="name"
+        android:textColor="@color/text_black"
+        android:textSize="13sp" />
+
+    <CheckBox
+        android:id="@+id/switcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/switch_selector"
+        android:checked="true"
+        android:focusable="false" />
+</LinearLayout>

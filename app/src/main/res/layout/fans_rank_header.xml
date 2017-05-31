@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/common_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/beans_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:drawablePadding="4dp"
+        android:drawableLeft="@drawable/icon_fans_rank_bean"
+        android:text="0豆"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+</LinearLayout>

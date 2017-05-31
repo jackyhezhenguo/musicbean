@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundImageView">
+        <attr name="edgesize" format="dimension" />
+    </declare-styleable>
+
+    <item name="tag_first" type="id"></item>
+    <item name="tag_second" type="id"></item>
+</resources>

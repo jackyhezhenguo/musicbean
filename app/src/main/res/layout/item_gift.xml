@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="#fa368c" />
+
+    <ImageView
+        android:id="@+id/tag"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/icon_gift_lianji" />
+
+    <TextView
+        android:id="@+id/diamond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:drawableRight="@drawable/icon_diamond"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_woman"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_woman_selector"
+            android:gravity="center"
+            android:textSize="0sp" />
+
+        <RadioButton
+            android:id="@+id/rb_man"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_man_selector"
+            android:gravity="center"
+            android:textSize="0sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rrect_green_bigcorner_bg"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+</LinearLayout>

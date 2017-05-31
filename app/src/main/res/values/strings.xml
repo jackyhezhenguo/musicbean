@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">音悦豆</string>
+
+    <string name="cube_views_load_more_loading">loading...</string>
+    <string name="cube_views_load_more_click_to_load_more">Click to load more</string>
+    <string name="cube_views_load_more_loaded_no_more">All the data has been loaded</string>
+    <string name="cube_views_load_more_loaded_empty">It is empty. :(</string>
+    <string name="cube_views_load_more_error">Load error, click to retry</string>
+
+    <string name="online_num">%s人在看</string>
+    <string name="income_num">%s人看过</string>
+    <string name="play_num">%s次播放</string>
+    <string name="protocal"><u>音悦豆服务和隐私条款</u></string>
+
+    <string name="click_getcode">获取短信验证码</string>
+    <string name="getcode_tips">运营商将会给您发送短信验证码，若没收到请重新验证</string>
+
+    <string name="sure">确认</string>
+    <string name="cancel">返回</string>
+
+    <string name="sign">个性签名：</string>
+
+    <string name="attend">
+        &lt;font color="#1f201b">%s&lt;/font>&lt;br>
+         &lt;font color="#a7a7a7">关注&lt;/font>
+    </string>
+    <string name="fans">
+        &lt;font color="#1f201b">%s&lt;/font>&lt;br>
+         &lt;font color="#a7a7a7">粉丝&lt;/font>
+    </string>
+    <string name="beans">
+        &lt;font color="#1f201b">%d&lt;/font>&lt;br>
+         &lt;font color="#a7a7a7">音悦豆&lt;/font>
+    </string>
+
+    <string name="live_anchor">%1$s\n音悦号：%2$s\n%3$s</string>
+
+    <string name="attend_fans">关注%1$s人 粉丝%2$s人</string>
+
+    <string name="live_finish_info">%1$s人观看\n收获%2$s音悦豆</string>
+    <string name="live_finish_info_short">%1$s人观看</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="exchange_diamonds">
+         &lt;font color="#a7a7a7">钻石余额:&lt;/font>
+        &lt;font color="#1f201b">%s&lt;/font>
+    </string>
+    <string name="exchange_beans">
+         &lt;font color="#a7a7a7">音悦豆余额:&lt;/font>
+        &lt;font color="#1f201b">%d&lt;/font>
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="pause_tips">主播马上回来，请不要离开哦</string>
+
+    <string name="play_count">播放%s次</string>
+
+    <string name="pay_top_msg">绑定的支付宝将成为你的提现账户</string>
+    <string name="pay_acount">支付宝账号</string>
+    <string name="pay_acount_hint">请输入支付宝账号</string>
+    <string name="pay_nickname">真实姓名</string>
+    <string name="pay_nickname_hint">请输入真实姓名</string>
+    <string name="pay_warn_msg">注意：请仔细确认支付宝账号和姓名&lt;font color="#e02246">[是否正确]&lt;/font>，否则绑定后的所有&lt;font color="#e02246">[提现操作都将失败]&lt;/font></string>
+    <string name="pay_binding">立刻绑定</string>
+
+
+    <string name="cp_select_city">选择城市</string>
+    <string name="cp_hot_city">热门城市</string>
+    <string name="cp_located_city">定位城市</string>
+    <string name="cp_hint_search_box">请输入城市名或拼音</string>
+    <string name="cp_nothing_found">没有搜索结果~</string>
+    <string name="cp_locating">正在定位…</string>
+    <string name="cp_located_failed">定位失败</string>
+
+</resources>

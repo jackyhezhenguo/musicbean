@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/custom_green</item>
+        <item name="android:windowBackground">@color/common_bg</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <item name="android:windowActionBar">true</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@android:color/white</item>
+        <item name="backgroundStacked">@android:color/white</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="elevation">0dp</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AnimationPreviewBottom" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+
+    <style name="Dialog_No_Board" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Fullscreen" parent="AppTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="PlayerSeekBarStyle" parent="android:style/Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/seekbar_progress_drawable</item>
+        <item name="android:thumb">@drawable/icon_progress_thumb</item>
+    </style>
+
+
+
+
+
+
+
+        <!-- Base application theme. -->
+        <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/cp_colorPrimary</item>
+            <item name="colorPrimaryDark">@color/cp_colorPrimaryDark</item>
+            <item name="colorAccent">@color/cp_colorAccent</item>
+        </style>
+
+        <style name="CityPicker.NoActionBar" parent="BaseTheme">
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowActionBar">false</item>
+        </style>
+
+        <style name="LetterIndexTextViewStyle">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:paddingLeft">16dp</item>
+            <item name="android:paddingRight">@dimen/side_letter_bar_width</item>
+            <item name="android:paddingTop">8dp</item>
+            <item name="android:paddingBottom">8dp</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:textColor">@color/cp_gray</item>
+        </style>
+
+
+</resources>

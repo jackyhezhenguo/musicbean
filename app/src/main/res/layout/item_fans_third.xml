@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="10dp"
+            android:background="@color/common_bg" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.musicbean.widget.RoundImageView
+                android:id="@+id/head_image"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_default_new_header"
+                app:edgesize="1dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/head_image"
+                android:src="@drawable/icon_rank_third" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="name"
+            android:textColor="@color/text_black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/contribution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="贡献0豆"
+            android:textColor="@color/text_black"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/icon_third" />
+</RelativeLayout>

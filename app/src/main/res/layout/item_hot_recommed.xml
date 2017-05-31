@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp">
+
+    <com.musicbean.widget.RoundImageView
+        android:id="@+id/re_item_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icon_default_new_header"
+        app:edgesize="1dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/re_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#1f201b"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/re_item_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="#98c524"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="豆"
+                android:textColor="#A7A7A7"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/re_item_follow"
+        android:layout_width="65dp"
+        android:layout_height="28dp"
+        android:background="@drawable/cbx_follow_checked"
+        android:gravity="center"
+        android:text="关注"
+        android:textColor="@android:color/white" />
+</LinearLayout>

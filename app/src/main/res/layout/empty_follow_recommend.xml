@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:scaleType="centerInside"
+        android:src="@drawable/rementuijian_beijing" />
+
+    <TextView
+        android:id="@+id/re_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:drawablePadding="4dp"
+        android:drawableRight="@drawable/guanzhu_micicon"
+        android:text="推荐热门主播"
+        android:textColor="#1F201B"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/re_hot_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_hot"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="40dp"
+        android:listSelector="@android:color/transparent" />
+</RelativeLayout>

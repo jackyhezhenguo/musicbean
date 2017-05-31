@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/live_bg">
+
+    <com.pili.pldroid.player.widget.PLVideoView
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true" />
+    <com.musicbean.ui.live.LiveControlWidget
+        android:id="@+id/control_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_marginTop="220dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_chat"
+            android:background="#888888"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="#333333"
+            android:text="聊天"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_player"
+            android:background="#888888"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="#333333"
+            android:text="选手"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="260dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+
+            android:id="@+id/lv_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/iv_face"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <EditText
+                android:id="@+id/et_say"
+                android:layout_gravity="center"
+                android:hint="说点什么吧.."
+                android:textSize="13sp"
+                android:layout_marginLeft="2dp"
+                android:layout_width="220dp"
+                android:layout_height="50dp" />
+            <ImageView
+                android:id="@+id/iv_gift"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_marginLeft="17dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <ImageView
+            android:id="@+id/iv_love"
+            android:layout_marginLeft="290dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_all"
+        android:layout_marginLeft="327dp"
+        android:layout_marginTop="180dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+</FrameLayout>

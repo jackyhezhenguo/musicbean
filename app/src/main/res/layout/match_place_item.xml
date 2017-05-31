@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/border_shape"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+    <ImageView
+        android:src="@drawable/tag_shape"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="22dp" />
+    <TextView
+        android:textColor="#666666"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="1dp"
+        android:text="比赛名称"
+        android:layout_width="match_parent"
+        android:layout_height="32dp" />
+    <TextView
+        android:textColor="#666666"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="1dp"
+        android:text="获得名次"
+        android:layout_width="match_parent"
+        android:layout_height="32dp" />
+    <TextView
+        android:textColor="#666666"
+        android:paddingRight="13dp"
+        android:gravity="center|right"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp"
+        android:text="归属合作商"
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+    <TextView
+        android:textColor="#666666"
+        android:paddingRight="13dp"
+        android:gravity="center|right"
+        android:textSize="14sp"
+        android:layout_marginTop="1dp"
+        android:text="城市"
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+    <TextView
+        android:textColor="#666666"
+        android:paddingRight="13dp"
+        android:gravity="center|right"
+        android:textSize="14sp"
+        android:layout_marginTop="1dp"
+        android:text="选手年龄"
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+</LinearLayout>

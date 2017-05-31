@@ -1,0 +1,377 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/toplayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/anchor_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/live_topleft_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp">
+
+            <com.musicbean.widget.RoundImageView
+                android:id="@+id/anchor_img"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/icon_default_new_header" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/anchor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:textColor="@color/text_light_green"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/online_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line_follow"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="7dp"
+                android:background="@android:color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/follow_bg"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp"
+                android:text="关注"
+                android:textColor="@android:color/white"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/user_img_list"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@+id/anchor_layout" />
+
+        <LinearLayout
+            android:id="@+id/bean_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/anchor_layout"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/live_beans_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="9dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="音悦豆"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/anchor_beans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="13dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_live_more"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/anchor_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/anchor_layout"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.3"
+            android:drawableTop="@drawable/icon_mark"
+            android:gravity="center"
+            android:text="@string/live_anchor"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/list_msg"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:padding="8dp"
+        android:scrollbars="none"
+        android:layout_above="@+id/play_progress_layout"
+        android:layout_toRightOf="@+id/toplayout"
+        android:layout_toEndOf="@+id/toplayout" />
+
+    <LinearLayout
+        android:id="@+id/play_progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+        android:gravity="center_vertical"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+
+
+
+    </LinearLayout>
+
+
+
+    <com.musicbean.ui.live.danmu.DanmuView
+        android:visibility="gone"
+        android:id="@+id/danmuview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/list_msg"
+         />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/bottom_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/btn_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/icon_chat" />
+
+        <ImageView
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/icon_share" />
+
+        <ImageView
+            android:id="@+id/btn_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/icon_gift" />
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_close_live" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-43dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp">
+
+        <CheckBox
+            android:id="@+id/cbx_open_danmu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/danmu_selector" />
+
+        <EditText
+            android:id="@+id/edt_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/rrect_white_bg"
+            android:hint="大家一起来互动吧!"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/btn_send_msg"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:background="@drawable/rrect_green_smallcorner_bg"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <com.musicbean.widget.animup.PeriscopeLayout
+        android:id="@+id/zan_layout"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_alignParentRight="true" />
+
+
+    <com.musicbean.widget.gift.SmallGiftGroup
+        android:id="@+id/small_gift_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/list_msg"
+        android:layout_marginBottom="90dp"
+        android:orientation="vertical" />
+
+    <com.musicbean.widget.gift.BigGiftWidget
+        android:id="@+id/big_gift_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="230dp"
+        android:orientation="vertical"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_alpha60"
+        android:gravity="center"
+        android:text="加载ing..."
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/prepareing_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/preparing"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/pause_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/black_alpha80"
+        android:padding="20dp"
+        android:text="@string/pause_tips"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_alpha40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbx_play"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/play_progress_layout"
+            android:layout_marginLeft="8dp"
+            android:button="@drawable/cbx_play_selector"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+
+        <SeekBar
+            android:id="@+id/progress_bar"
+            style="@style/PlayerSeekBarStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:thumbOffset="6dp" />
+
+        <TextView
+            android:id="@+id/total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+
+        <CheckBox
+            android:id="@+id/btn_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:drawableLeft="@drawable/btn_scale_selector"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

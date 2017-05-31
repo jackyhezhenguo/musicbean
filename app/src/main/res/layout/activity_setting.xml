@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="15dp"
+        android:background="@color/line_gray" />
+
+    <LinearLayout
+        android:id="@+id/bind_phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户安全"
+            android:textColor="@color/text_black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/bind_phone_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/icon_item_more"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="绑定手机"
+            android:textColor="@color/text_gray"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray" />
+
+    <LinearLayout
+        android:id="@+id/msg_push_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息提醒"
+            android:textColor="@color/text_black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/icon_item_more"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_gray"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray" />
+
+    <LinearLayout
+        android:id="@+id/feedback_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投诉与建议"
+            android:textColor="@color/text_black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/icon_item_more"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_gray"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前版本"
+            android:textColor="@color/text_black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="V1.0"
+            android:textColor="@color/text_gray"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray" />
+
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rrect_green_bigcorner_bg"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+
+</LinearLayout>

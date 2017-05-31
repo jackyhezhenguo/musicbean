@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingTop="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_gravity="center"
+        android:textColor="#999999"
+        android:text="1"
+        android:gravity="center"
+        android:layout_width="45dp"
+        android:layout_height="match_parent" />
+
+    <com.musicbean.widget.RoundImageView
+        android:layout_gravity="center"
+        android:id="@+id/re_item_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icon_default_new_header"
+        app:edgesize="1dp" />
+
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/re_item_name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="闪烁星"
+            android:textColor="#1f201b"
+            android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="音悦豆："
+                android:textColor="#98c524"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tv_bean_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:maxLines="1"
+                android:text="4154545454"
+                android:textColor="#98c524"
+                android:textSize="14sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:background="#888888"
+        android:layout_marginLeft="5dp"
+        android:layout_width="330dp"
+        android:layout_height="0.7dp" />
+</LinearLayout>

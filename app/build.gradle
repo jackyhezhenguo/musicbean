@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "cn.musicbean.live"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 20
+        versionName "3.2.2"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [RONG_CLOUD_APP_KEY: "6tnym1brnr4d7", Environment: "online"]
+        }
+
+        debug {
+            signingConfig signingConfigs.debug
+            manifestPlaceholders = [RONG_CLOUD_APP_KEY: "c9kqb3rdkdozj", Environment: "online"]
+        }
+    }
+
+    productFlavors {
+
+        baidu {}
+        yingyongbao {}
+        sjzs360 {}
+        yyd {}
+
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [CHANNEL_NAME: name]
+        }
+
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //compile project(':camerafilterfbo')
+    compile(name: 'camerafilterfbo-release', ext: 'aar')
+    compile(name: 'yasea-release', ext: 'aar')
+    compile files('libs/AMap_Location_V3.2.0_20161205.jar')
+    compile files('libs/volley.jar')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}

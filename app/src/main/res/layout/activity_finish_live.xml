@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_alpha60"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="直播结束"
+        android:textColor="@color/text_light_green"
+        android:textSize="28dp" />
+
+    <TextView
+        android:id="@+id/finish_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingMultiplier="1.5"
+        android:text="@string/live_finish_info"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_goto_main"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/round_green_bg"
+        android:gravity="center"
+        android:text="返回首页"
+        android:textColor="@color/custom_green"
+        android:textSize="15sp" />
+
+</LinearLayout>

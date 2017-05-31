@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/yinfu1"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:paddingLeft="11dp"
+            android:gravity="center|left"
+            android:textSize="13sp"
+            android:text="林子爸爸"
+            android:layout_width="260dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/tv_in"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/yinfu3"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:paddingLeft="1dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="赞"
+            android:layout_width="18dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:paddingLeft="56dp"
+        android:gravity="center|left"
+        android:textSize="15sp"
+        android:text="会做糕点的人儿真棒"
+        android:layout_width="318dp"
+        android:layout_height="25dp" />
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="56dp"
+                android:gravity="center|left"
+                android:textSize="12sp"
+                android:text="2017-05-15"
+                android:layout_width="70dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/tv_reply"
+                android:gravity="center|left"
+                android:textColor="#333333"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/rrect_gray_reply"
+                android:textSize="12sp"
+                android:text="8回复"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

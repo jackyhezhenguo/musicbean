@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <TextView
+        android:id="@+id/tv_ranking"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="1"
+        android:layout_width="50dp"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_marginLeft="1dp"
+        android:layout_gravity="center"
+        android:src="@drawable/cbx_play"
+        android:layout_width="55dp"
+        android:layout_height="55dp" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_user_name"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:gravity="center|left"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="黄鹏鹏"
+        android:layout_width="100dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_marginLeft="2dp"
+        android:id="@+id/tv_bean_count"
+        android:textColor="#999999"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="14sp"
+        android:gravity="center|right"
+        android:text="音悦豆：55214547"
+        android:layout_width="135dp"
+        android:layout_height="match_parent" />
+</LinearLayout>
+</LinearLayout>

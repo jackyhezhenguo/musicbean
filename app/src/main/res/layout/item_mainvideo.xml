@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="175dp"
+    android:layout_height="170dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/im"
+    android:src="@drawable/yinfu1"
+    android:layout_width="match_parent"
+    android:layout_height="120dp" />
+    <TextView
+        android:id="@+id/tv_title"
+        android:gravity="center|left"
+        android:layout_marginLeft="10dp"
+        android:textSize="15.5sp"
+        android:text="教育机构：童星大冒险"
+        android:background="#dddddd"
+        android:textColor="#333333"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_marginLeft="10dp"
+        android:textColor="#333333"
+        android:gravity="center|left"
+        android:textSize="13sp"
+        android:text="音悦豆:7754"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_play_count"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="11sp"
+        android:gravity="left|top"
+        android:textColor="#333333"
+        android:text="播放次数：7877382738"
+        android:layout_width="140dp"
+        android:layout_height="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rotate_header_list_view_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <com.musicbean.widget.loadmore.LoadMoreListViewContainer
+            android:id="@+id/load_more_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <ListView
+                android:visibility="visible"
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/white"
+                android:dividerHeight="0dp"
+                android:scrollbars="none" />
+
+            <com.musicbean.widget.HeaderGridView
+                android:layout_margin="6dp"
+                android:id="@+id/gv_mainvideo"
+                android:scrollbars="none"
+                android:numColumns="2"
+                android:columnWidth="120dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="8dp"
+                android:horizontalSpacing="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.musicbean.widget.HeaderGridView>
+        </com.musicbean.widget.loadmore.LoadMoreListViewContainer>
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/icon_fans_rank_bean"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_apply"
+            android:background="@drawable/rrect_green_apply"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="立即报名"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="280dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="170dp"
+        android:orientation="vertical"
+        android:background="@drawable/rrect_white_apply"
+        android:layout_width="330dp"
+        android:layout_height="245dp">
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:src="@drawable/yinfu3"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:background="@drawable/rrect_green_select"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="选择萌娃"
+            android:textSize="17sp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="115dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:textColor="#B2B2B2"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="请选择报名的萌娃"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="45dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_append1"
+                    android:src="@drawable/yinfu3"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:id="@+id/tv1"
+                    android:textColor="#B2B2B2"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="添加萌娃"
+                    android:textSize="15sp"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_append2"
+                    android:src="@drawable/yinfu3"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:id="@+id/tv2"
+                    android:textColor="#B2B2B2"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="添加萌娃"
+                    android:textSize="15sp"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll3"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_append3"
+                    android:src="@drawable/yinfu3"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:id="@+id/tv3"
+                    android:textColor="#B2B2B2"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="添加萌娃"
+                    android:textSize="15sp"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp" />
+                </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_apply_comfirm"
+            android:background="#98C524"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:textSize="16sp"
+            android:text="报名"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+    </LinearLayout>
+
+</merge>

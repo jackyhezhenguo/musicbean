@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/item_bg_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp">
+
+    <TextView
+        android:id="@+id/diamonds"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/icon_diamond_60_42"
+        android:drawablePadding="15dp"
+        android:text="0"
+        android:textColor="@color/text_green"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/beans"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rrect_green_smallcorner_bg"
+        android:gravity="center"
+        android:text="60音悦豆"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+</LinearLayout>

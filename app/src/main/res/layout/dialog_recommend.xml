@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corners_white_bg"
+    android:orientation="vertical"
+    android:padding="16sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/guanzhu_micicon"
+            android:drawablePadding="6dp"
+            android:text="推荐热门主播"
+            android:textColor="#1F201B"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/recommend_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/recommed_close" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/recommend_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+</LinearLayout>

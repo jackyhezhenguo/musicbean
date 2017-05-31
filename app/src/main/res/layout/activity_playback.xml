@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/live_bg">
+
+    <com.pili.pldroid.player.widget.PLVideoTextureView
+        android:id="@+id/surface"
+        android:layout_gravity="center|top"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:keepScreenOn="true" />
+    <com.musicbean.ui.live.PlaybackControlWidget
+        android:layout_gravity="center|top"
+        android:id="@+id/control_widget"
+        android:layout_width="match_parent"
+        android:layout_height="210dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_blank"
+        android:layout_marginTop="210dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_chat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#888888"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_player"
+            android:background="#888888"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="#333333"
+            android:text=""
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+
+            android:id="@+id/lv_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="51dp">
+    <View
+        android:id="@+id/view"
+        android:background="#C8C8C8"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+        <LinearLayout
+            android:id="@+id/ll_say"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp">
+
+            <EditText
+                android:id="@+id/et_say"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:hint="说点什么吧.."
+                android:background="@drawable/rrect_gray_reply"
+                android:textSize="13sp"
+                android:layout_marginLeft="13dp"
+                android:layout_width="250dp"
+                android:layout_height="35dp" />
+            <ImageView
+                android:id="@+id/iv_gift"
+                android:src="@drawable/yinfu4"
+                android:layout_marginLeft="18dp"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <ImageView
+                android:src="@drawable/yinfu2"
+                android:id="@+id/iv_share"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+</LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:src="@drawable/yinfu4"
+            android:layout_marginLeft="17dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <ImageView
+            android:id="@+id/iv_love"
+            android:layout_marginLeft="290dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fl_cover"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        ></FrameLayout>
+</FrameLayout>
